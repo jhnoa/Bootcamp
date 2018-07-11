@@ -27,5 +27,6 @@ console.log(arrayComparison([1, 2, 3], 2)); // false
 console.log(arrayComparison(2, [1, 2, 3])); // false
 console.log(arrayComparison(1, 1)); // true
 console.log(arrayComparison(1, 2)); // false
-console.log(arrayComparison('a', 'a')); // true
-console.log(arrayComparison('a', 'b')); // false
+console.log(arrayComparison("a", "a")); // true
+console.log(arrayComparison("a", "b")); // false
+console.log("ini cuman ngetes");
