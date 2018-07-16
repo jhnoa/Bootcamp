@@ -1,8 +1,8 @@
 {
-  "name": "Day12",
+  "name": "Day13",
   "version": "0.1.0",
   "private": true,
-  "description": "Day12",
+  "description": "Day13",
   "scripts": {
     "start": "webpack-dev-server --content-base assets/",
     "build": "webpack",
@@ -16,7 +16,6 @@
   "dependencies": {
     "class-autobind": "^0.1.4",
     "classnames": "^2.2.6",
-    "node-fetch": "^2.1.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
@@ -41,7 +40,7 @@
     "eslint-plugin-react": "^7.10.0",
     "flow-bin": "^0.76.0",
     "flow-typed": "^2.5.1",
-    "jest": "^23.4.0",
+    "jest": "^23.4.1",
     "prettier-eslint": "^8.8.2",
     "prettier-eslint-cli": "^4.7.1",
     "raw-loader": "^0.5.1",
