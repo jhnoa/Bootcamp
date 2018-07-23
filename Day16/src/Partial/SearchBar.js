@@ -16,7 +16,7 @@ export default class SearchBar extends Component<Props, State> {
   state = {
     value: '',
   };
-  _onTextChange = (text) => {
+  _onTextChange = (text: string) => {
     this.setState({
       value: text,
     });

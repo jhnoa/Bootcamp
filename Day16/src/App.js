@@ -1,32 +1,73 @@
 import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+import {View, ScrollView} from 'react-native';
 import Style from './Style';
 import SearchBar from './Partial/SearchBar';
 import NotificationBar from './Partial/NotificationBar';
+import ImageView from './Partial/ImageView';
+
+type ImageObject = {
+  id: string,
+  link: string,
+  title: string,
+  description: string,
+};
 
 type State = {
-  imgUrlList: Map<string, boolean>,
+  searchText: string,
+  favorite: Array<ImageObject>,
+  pages: string,
 };
 
 export default class App extends Component<{}, State> {
   state = {
-    urlList: new Map(),
+    searchText: '',
+    favorite: [],
+    pages: 'main',
   };
   onSearchClicked = (text) => {
     this.setState({
-      urlList: this.state.urlList.set(text, false),
+      searchText: text,
     });
   };
+
+  onFavorite = (text) => {
+    let index = this.state.favorite.findIndex((s) => s === text);
+    console.log(index, text);
+    if (index === -1) {
+      console.log('ADD');
+      this.setState({
+        favorite: [...this.state.favorite, text],
+      });
+    } else {
+      console.log('REMOVE');
+      let newArray = [...this.state.favorite];
+      newArray.splice(index, 1);
+      this.setState({
+        favorite: newArray,
+      });
+    }
+  };
+
+  _showPages = (pages) => {
+    if (pages === 'main') {
+      return (
+        <View style={Style.container}>
+          <NotificationBar />
+          <SearchBar onSearch={this.onSearchClicked} />
+          <ScrollView>
+            <ImageView
+              searchText={this.state.searchText}
+              fav={this.state.favorite}
+              onFavorite={this.onFavorite}
+            />
+          </ScrollView>
+        </View>
+      );
+    }
+  };
+
   render() {
-    let test = () => {};
-    return (
-      <View style={Style.container}>
-        <NotificationBar />
-        <SearchBar onSearch={this.onSearchClicked} />
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
+    console.log('APP RENDER');
+    return this._showPages(this.state.pages);
   }
 }
