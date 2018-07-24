@@ -1,7 +1,13 @@
 // @flow
 
 import React, {Component} from 'react';
-import {View, Text, Image} from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  ScrollView,
+  TouchableWithoutFeedback,
+} from 'react-native';
 import Style from '../Style';
 import DetailFragment from './DetailFragment';
 
@@ -14,15 +20,24 @@ type ImageObject = {
 
 type Props = {
   images: Array<ImageObject>,
+  onBack: () => void,
 };
 
 export default class Detail extends Component<Props> {
   render() {
+    console.log('DETAIL RENDER');
     return (
-      <ScrollableView>
-        {this.props.images.map((obj) => {
-          return <DetailFragment item={obj} />;
-        })}
+      <View>
+        <View style={Style.searchView}>
+          <TouchableWithoutFeedback onPress={() => this.props.onBack()}>
+            <View style={Style.backButton} />
+          </TouchableWithoutFeedback>
+        </View>
+        <ScrollView>
+          {this.props.images.map((obj) => {
+            return <DetailFragment key={obj.link} item={obj} />;
+          })}
+        </ScrollView>
       </View>
     );
   }

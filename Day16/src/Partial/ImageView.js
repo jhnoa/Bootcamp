@@ -4,19 +4,19 @@ import React, {Component} from 'react';
 import {View, Image, TouchableWithoutFeedback} from 'react-native';
 import Style from '../Style';
 
-type OnFavorite = (string) => void;
-
-type Props = {
-  searchText: string,
-  fav: Array<string>,
-  onFavorite: OnFavorite,
-};
-
 type ImageObject = {
   id: string,
   link: string,
   title: string,
   description: string,
+};
+
+type OnFavorite = (ImageObject) => void;
+
+type Props = {
+  searchText: string,
+  fav: Array<string>,
+  onFavorite: OnFavorite,
 };
 
 type State = {
@@ -30,7 +30,7 @@ export default class ImageView extends Component<Props, State> {
     images: [],
   };
 
-  loadImage = async (text) => {
+  loadImage = async (text: string) => {
     console.log('loading Image');
     let url = `https://api.imgur.com/3/gallery/search/?q=${text}`;
     let head = await fetch(url, {

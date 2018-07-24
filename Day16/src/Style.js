@@ -4,9 +4,9 @@ import {StyleSheet} from 'react-native';
 
 let style = StyleSheet.create({
   container: {
-    display: 'flex',
+    flex: 1,
     backgroundColor: '#fdf',
-    alignItems: 'center',
+    alignItems: 'stretch',
     flexDirection: 'column',
   },
   notificationBar: {
@@ -14,10 +14,39 @@ let style = StyleSheet.create({
     backgroundColor: 'maroon',
     alignSelf: 'stretch',
   },
-  searchBarView: {
-    alignSelf: 'stretch',
+  mainMenuView: {
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: '#123232',
+    justifyContent: 'space-around',
+  },
+  mainMenuItem: {
+    width: '60%',
+    height: 140,
+    backgroundColor: 'white',
+    borderRadius: 10,
+  },
+  mainMenuText: {
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    fontSize: 30,
+    backgroundColor: 'white',
+  },
+  searchView: {
+    backgroundColor: 'aqua',
     padding: 10,
-    display: 'flex',
+    flexDirection: 'row',
+  },
+  backButton: {
+    width: 70,
+    height: 70,
+    backgroundColor: 'green',
+  },
+  searchBarView: {
+    paddingHorizontal: 10,
+    flex: 1,
+    alignItems: 'stretch',
+    flexDirection: 'column',
   },
   searchBar: {
     padding: 5,
