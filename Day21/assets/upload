@@ -1,0 +1,35 @@
+------WebKitFormBoundaryOWfjIM2UEgxgAAkw
+Content-Disposition: form-data; name="uploadFile"; filename="Terminal Saved Output.txt"
+Content-Type: text/plain
+
+------WebKitFormBoundaryLUdm6CDe7xtMikFX
+Content-Disposition: form-data; name="uploadFile"; filename="api.txt"
+Content-Type: text/plain
+
+purpose hound	http://mytestingweb.gwiddle.co.uk/lib/get.php?method=purpose&parpurposedherding	http://mytestingweb.gwiddle.co.uk/lib/get.php?method=purpose&parpurposeitoy	http://mytestingweb.gwiddle.co.uk/lib/get.php?method=purpose&parpurpose	working	http://mytestingweb.gwiddle.co.uk/lib/get.php?method=purpose&parpurposeiterrier	http://mytestingweb.gwiddle.co.uk/lib/get.php?method=purpose&parpurposeisporting	http://mytestingweb.gwiddle.co.uk/lib/get.php?method=purpurposernon_sporting	http://mytestingweb.gwiddle.co.uk/lib/get.php?method=purhypoallergenic_syesting http://mytestingweb.gwiddle.co.uk/lib/get.php?method=hyphypoallergenicranoyes   http://mytestingweb.gwiddle.co.uk/lib/get.php?method=hypenergygelow_energyno    http://mytestingweb.gwiddle.co.uk/lib/get.php?method=eneenergyramed_energygy    http://mytestingweb.gwiddle.co.uk/lib/get.php?method=eneenergyrahigh_energyy    http://mytestingweb.gwiddle.co.uk/lib/get.php?method=enecostparalow_costnergy   http://mytestingweb.gwiddle.co.uk/lib/get.php?method=coscostram=med_cost	http://mytestingweb.gwiddle.co.uk/lib/get.php?method=coscostram=high_cost	http://mytestingweb.gwiddle.co.uk/lib/get.php?method=cosadaptability_coslow_adapt	http://mytestingweb.gwiddle.co.uk/lib/get.php?meadaptabilityilitmed_adaptow_adaphttp://mytestingweb.gwiddle.co.uk/lib/get.php?meadaptabilityilithigh_adaptd_adaphttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=adaptability&param=high_adapt
+------WebKitFormBoundaryLUdm6CDe7xtMikFX--
+
+=====================================================================================
+{ '------WebKitFormBoundaryLUdm6CDe7xtMikFX\r\nContent-Disposition: form-data; name': '"uploadFile"; filename="api.txt"\r\nContent-Type: text/plain\r\n\r\nmethod\tparam\tAPI\rpurpose\thound\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=purpose',
+  param: 
+   [ 'hound\rpurpose\therding\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=purpose',
+     'herding\rpurpose\ttoy\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=purpose',
+     'toy\rpurpose\tworking\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=purpose',
+     'working\rpurpose\tterrier\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=purpose',
+     'terrier\rpurpose\tsporting\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=purpose',
+     'sporting\rpurpose\tnon_sporting\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=purpose',
+     'non_sporting\rhypoallergenic\tyes\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=hypoallergenic',
+     'yes\rhypoallergenic\tno\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=hypoallergenic',
+     'no\renergy\tlow_energy\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=energy',
+     'low_energy\renergy\tmed_energy\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=energy',
+     'med_energy\renergy\thigh_energy\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=energy',
+     'high_energy\rcost\tlow_cost\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=cost',
+     'low_cost\rcost\tmed_cost\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=cost',
+     'med_cost\rcost\thigh_cost\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=cost',
+     'high_cost\radaptability\tlow_adapt\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=adaptability',
+     'low_adapt\radaptability\tmed_adapt\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=adaptability',
+     'med_adapt\radaptability\thigh_adapt\thttp://mytestingweb.gwiddle.co.uk/lib/get.php?method=adaptability',
+     'high_adapt\r\n------WebKitFormBoundaryLUdm6CDe7xtMikFX--\r\n' ] }
+
+
+------WebKitFormBoundaryOWfjIM2UEgxgAAkw--

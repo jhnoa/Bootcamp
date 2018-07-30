@@ -7,19 +7,15 @@ let server = http.createServer();
 function pipe(inputStream: stream$Readable, outputStream: http$ServerResponse) {
   inputStream.on('data', (data: Buffer) => {
     if (outputStream.write(data) === false) {
-      console.log('Paused');
       inputStream.pause();
+      outputStream.once('drain', (data: Buffer) => {
+        inputStream.resume();
+      });
     }
   });
 
   inputStream.on('end', (data: Buffer) => {
-    console.log('End');
     outputStream.end();
-  });
-
-  outputStream.on('drain', (data: Buffer) => {
-    console.log('Drain');
-    inputStream.resume();
   });
 }
 server.on('request', (req: http$IncomingMessage, res: http$ServerResponse) => {
