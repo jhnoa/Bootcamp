@@ -23,7 +23,7 @@ server.on(
         });
         request.on('end', () => {
           response.statusCode = 200;
-          let data = JSON.parse(body);
+          let data: {name: string; price: string} = JSON.parse(body);
           console.log(data.name);
           response.setHeader('Content-Type', 'text/plain');
           response.write(`Name: ${data.name}\n`);
