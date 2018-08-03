@@ -2,7 +2,7 @@ Arguments:
   /usr/local/bin/node /Users/Me/.yarn/bin/yarn.js start
 
 PATH: 
-  /Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/Me/.yarn/bin:/Users/Me/.config/yarn/global/node_modules/.bin:./node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Me/omnetpp-5.4.1/bin
+  /Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/Me/.yarn/bin:/Users/Me/.config/yarn/global/node_modules/.bin:./node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Me/omnetpp-5.4.1/bin:/Users/Me/omnetpp-5.4.1/bin:/Users/Me/.yarn/bin:/Users/Me/.config/yarn/global/node_modules/.bin:./node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Me/omnetpp-5.4.1/bin:/Users/Me/omnetpp-5.4.1/tools/macosx/bin:/Users/Me/.yarn/bin:/Users/Me/.config/yarn/global/node_modules/.bin:./node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Me/omnetpp-5.4.1/bin
 
 Yarn version: 
   1.5.1
@@ -7751,7 +7751,7 @@ Trace:
   Exit code: 1
   Command: sh
   Arguments: -c react-native-scripts start
-  Directory: /Users/Me/Documents/Training/Day16
+  Directory: /Users/Me/Documents/Training/Day18
   Output:
   
       at ProcessTermError.MessageError (/Users/Me/.yarn/lib/cli.js:186:110)
